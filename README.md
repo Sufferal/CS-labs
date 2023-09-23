@@ -12,3 +12,5 @@ In a mono-alphabetic cipher, the substitution remains consistent throughout the 
 
 While mono-alphabetic ciphers are straightforward to implement, they are not secure for protecting sensitive information because they are vulnerable to simple cryptanalysis methods.
 
+## Polyalphabetic Cipher (#3)
+A polyalphabetic cipher is any cipher based on substitution, using multiple substitution alphabets . The Vigenère cipher is probably the best-known example of a polyalphabetic cipher, though it is a simplified special case. The Enigma machine is more complex but is still fundamentally a polyalphabetic substitution cipher.
