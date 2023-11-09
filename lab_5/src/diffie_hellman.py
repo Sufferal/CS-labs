@@ -1,4 +1,5 @@
 import sys
+import hashlib
 import random
 
 # Set the maximum number of digits for integers
@@ -19,16 +20,9 @@ public_2 = pow(g, private_2, p)
 shared_1 = pow(public_2, private_1, p)
 shared_2 = pow(public_1, private_2, p)
 
-def trunc_256_bits(key):
-  res = key.to_bytes((key.bit_length() + 7) // 8, byteorder='big')
-  
-  # Ensure the shared secret is 256 bits (32 bytes)
-  if len(res) < 32:
-    res = b'\x00' * (32 - len(res)) + res
-  elif len(res) > 32:
-    res = res[-32:]
-  
-  return res
+def trunc_256_bits(shared_secret):
+  shared_key_bytes = shared_secret.to_bytes((shared_secret.bit_length() + 7) // 8, byteorder='big')
+  return hashlib.sha256(shared_key_bytes).digest()
 
 def diffie_hellman_main():
   print("Prime: ", p)
