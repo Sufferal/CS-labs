@@ -1,5 +1,6 @@
 def caesar_cipher(action, key, text, permutation = None):
-  alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  original_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  alphabet = original_alphabet
   result = ""
   
   if permutation:
@@ -13,6 +14,7 @@ def caesar_cipher(action, key, text, permutation = None):
 
     # Add permutation to the beginning of alphabet
     alphabet = permutation + alphabet
+    print("Original Alphabet:", original_alphabet)
     print("Altered Alphabet:", alphabet)
 
 

@@ -27,11 +27,8 @@ def xor_exp(r_block, key):
 
   return xor_arr
 
-def generate_random_key():
-  return [random.randint(0, 1) for _ in range(48)]
-
-def generate_random_r_block():
-  return [random.randint(0, 1) for _ in range(32)]
+def generate_random(n):
+  return [random.randint(0, 1) for _ in range(n)]
 
 def is_binary_string(input_string):
   return all(bit in ('0', '1') for bit in input_string)
@@ -81,8 +78,8 @@ def menu():
       r_block = [int(bit) for bit in r_block]
       print_results(key, r_block)
     elif choice == '2':
-      key = generate_random_key()
-      r_block = generate_random_r_block()
+      key = generate_random(48)
+      r_block = generate_random(32)
       print_results(key, r_block)
     elif choice == '3':
       break
