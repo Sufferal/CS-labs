@@ -1,5 +1,5 @@
-# Cryptography Labs
-This repository contains the laboratory works for the Cryptography course at FCIM, UTM.
+# CS Labs
+This is a repository for implementation of different ciphers in Python. 
 
 ## Caesar Cipher (#1)
 It is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
@@ -29,11 +29,11 @@ AES is a variant of the Rijndael block cipher developed by two Belgian cryptogra
 ## RSA (#7)
 RSA (Rivest–Shamir–Adleman) is one of the first public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and it is different from the decryption key which is kept secret (private). In RSA, this asymmetry is based on the practical difficulty of the factorization of the product of two large prime numbers, the "factoring problem". The acronym RSA is made of the initial letters of the surnames of Ron Rivest, Adi Shamir, and Leonard Adleman, who first publicly described the algorithm in 1977. Clifford Cocks, an English mathematician working for the British intelligence agency Government Communications Headquarters (GCHQ), had developed an equivalent system in 1973, but this was not declassified until 1997.
 
-# ElGamal (#8)
+## ElGamal (#8)
 ElGamal encryption is an public-key cryptosystem. It was described by Taher Elgamal in 1985. ElGamal encryption is used in the free GNU Privacy Guard software, recent versions of PGP, and other cryptosystems. The Digital Signature Algorithm (DSA) is a variant of the ElGamal signature scheme, which should not be confused with ElGamal encryption.
 
-# Diffie-Hellman (#9)
+## Diffie-Hellman (#9)
 Diffie–Hellman key exchange (DH) is a method of securely exchanging cryptographic keys over a public channel and was one of the first public-key protocols as originally conceptualized by Ralph Merkle and named after Whitfield Diffie and Martin Hellman. DH is one of the earliest practical examples of public key exchange implemented within the field of cryptography. Published in 1976 by Diffie and Hellman, this is the earliest publicly known work that proposed the idea of a private key and a corresponding public key. The purpose of this algorithm is to enable two users to securely exchange a key over an insecure channel without any prior secrets. This technique is also known as exponential key agreement.
 
-# MD6 (#10)
+## MD6 (#10)
 MD6 is a cryptographic hash function. It was designed by Ronald Rivest in 2008 as a response to NIST's request for SHA-3 cryptographic hash function submissions, and was submitted to the NIST hash function competition by John Kelsey. It is based on MD5. The MD6 hash function is not patented, though the MD6 name is trademarked.
